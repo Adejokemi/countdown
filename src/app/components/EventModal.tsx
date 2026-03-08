@@ -31,6 +31,10 @@ export function EventModal({ initialData, onSave, onClose }: Props) {
     onClose();
   };
 
+  const now = new Date();
+  now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+  const minDateTime = now.toISOString().slice(0, 16);
+
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-[#1e293b] w-full max-w-md rounded-2xl p-6 border border-slate-700 shadow-2xl">
@@ -62,6 +66,7 @@ export function EventModal({ initialData, onSave, onClose }: Props) {
             <input
               required
               type="datetime-local"
+              min={minDateTime}
               value={formData.targetDate}
               onChange={(e) =>
                 setFormData({ ...formData, targetDate: e.target.value })

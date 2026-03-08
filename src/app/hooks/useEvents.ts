@@ -47,16 +47,11 @@ export function useEvents() {
     saveEvents(events.filter((e) => e.id !== id));
   };
 
-  const sortedEvents = [...events].sort(
-    (a, b) =>
-      new Date(a.targetDate).getTime() - new Date(b.targetDate).getTime(),
-  );
-
-  return {
-    urgentEvent: sortedEvents[0],
-    upcomingEvents: sortedEvents.slice(1),
-    addEvent,
-    updateEvent,
-    deleteEvent,
-  };
+  
+ return {
+   events, 
+   addEvent,
+   updateEvent,
+   deleteEvent,
+ };
 }

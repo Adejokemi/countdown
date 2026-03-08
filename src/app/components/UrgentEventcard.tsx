@@ -22,7 +22,7 @@ export function UrgentEventCard({ event, onEdit, onDelete, onGoLive }: Props) {
   return (
     <section>
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-2xl font-bold text-white">Most Urgent</h2>
+        <h2 className="text-2xl font-bold text-white">Upcoming Events</h2>
         {isCritical && (
           <span className="bg-red-500/10 text-red-500 text-xs font-bold px-3 py-1 rounded-full border border-red-500/20 shadow-[0_0_10px_rgba(239,68,68,0.2)]">
             CRITICAL PRIORITY

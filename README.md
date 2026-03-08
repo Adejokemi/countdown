@@ -31,7 +31,7 @@ A modern, responsive dark-themed dashboard built to visualize and track upcoming
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/Adejokemi/countdown.git](https://github.com/Adejokemi/countdown.git)
+    git clone [git@github.com:Adejokemi/countdown.git](https://github.com/Adejokemi/countdown.git)
     cd your-repo-name
     ```
 

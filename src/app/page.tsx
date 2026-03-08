@@ -119,7 +119,16 @@ export default function DashboardPage() {
                 <ListFilter className="w-4 h-4 text-slate-400" />
                 <select
                   value={timeFilter}
-                  onChange={(e) => setTimeFilter(e.target.value as "all" | "day" | "week" | "month" | "year")}
+                  onChange={(e) =>
+                    setTimeFilter(
+                      e.target.value as
+                        | "all"
+                        | "day"
+                        | "week"
+                        | "month"
+                        | "year",
+                    )
+                  }
                   className="bg-slate-800 text-sm text-white focus:outline-none cursor-pointer"
                 >
                   <option value="all">All Upcoming</option>
@@ -149,19 +158,21 @@ export default function DashboardPage() {
                 No past events found.
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-75 grayscale hover:grayscale-0 transition-all">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {pastEvents.map((event) => (
                   <UpcomingEventCard
                     key={event.id}
                     event={event}
                     onEdit={() => {}} 
                     onDelete={deleteEvent}
+                    isPast={true} 
                   />
                 ))}
               </div>
             )}
           </section>
         )}
+
 
         {/* VIEW: ACTIVE */}
         {view === "active" && (

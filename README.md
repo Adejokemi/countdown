@@ -3,7 +3,7 @@
 A modern, responsive dark-themed dashboard built to visualize and track upcoming events, deadlines, and milestones with real-time countdowns. 
 
 ## 🚀 Live Demo
-[View Live Demo](https://countdown-sherifat-ajoke.vercel.app/)  
+**Live Link:** [View Live Demo](https://-sherifat-ajoke.vercel.app/)  
 **Repository:** [GitHub Link](https://github.com/Adejokemi/countdown.git)
 
 ## 🛠️ Tech Stack
@@ -31,7 +31,7 @@ A modern, responsive dark-themed dashboard built to visualize and track upcoming
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    git clone [https://github.com/Adejokemi/countdown.git](https://github.com/Adejokemi/countdown.git)
     cd your-repo-name
     ```
 
